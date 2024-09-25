@@ -231,7 +231,30 @@ Once the data was cleaned, an **EDA** was performed to get an understanding of t
    FROM Spotify
    ORDER BY Views_count DESC;
    ```
+## QUERY OPTIMIZATION
+### What is SQL Query Optimization?
 
+SQL query optimization is the process of enhancing the performance of SQL queries by improving their execution speed and minimizing the resources they consume. This involves refining how queries are structured and executed so that they retrieve the required data quickly and efficiently. Effective optimization ensures that the database system handles large amounts of data without slowing down, improving overall system performance.
+
+### Advantages of SQL Query Optimization
+
+1. **Improved Performance**: Faster query execution results in quicker access to data.
+2. **Resource Efficiency**: Optimized queries reduce CPU, memory, and storage usage, leading to lower operational costs.
+3. **Better User Experience**: Shorter response times enhance the user experience by reducing wait times for data retrieval.
+4. **Scalability**: Optimized queries allow the system to handle more data and users without significant performance degradation.
+
+### Best Practices for SQL Query Optimization
+
+1. **Use Indexes**
+2. **Use WHERE Clause Instead of HAVING**
+3. **Avoid Queries Inside a Loop**
+4. **Use SELECT Instead of SELECT * **  
+5. **Add EXPLAIN to the Beginning of Queries**
+6. **Keep Wildcards at the End of Phrases**
+7. **Use EXISTS() Instead of COUNT()**
+8. **Avoid Cartesian Products**
+9. **Consider Denormalization**
+10. **Optimize JOIN Operations**
 ---
 
 ## Conclusion
