@@ -248,13 +248,39 @@ SQL query optimization is the process of enhancing the performance of SQL querie
 1. **Use Indexes**
 2. **Use WHERE Clause Instead of HAVING**
 3. **Avoid Queries Inside a Loop**
-4. **Use SELECT Instead of SELECT * **  
+4. **Use SELECT Instead of SELECT * .**
 5. **Add EXPLAIN to the Beginning of Queries**
 6. **Keep Wildcards at the End of Phrases**
 7. **Use EXISTS() Instead of COUNT()**
 8. **Avoid Cartesian Products**
 9. **Consider Denormalization**
 10. **Optimize JOIN Operations**
+### EXAMPLE
+**BY USING INDEXES**
+
+**BEFORE QUERY OPTIMIZATION:**
+Initial Query Performance Analysis Using EXPLAIN ANALYZE
+We conducted an initial performance analysis of a query using the EXPLAIN ANALYZE function. The query retrieves the top 5 tracks from the Spotify table based on the artist Taylor Swift, ordered by the number of streams in descending order. The performance metrics were as follows:
+
+Execution Time (E.T.): 4.76 ms
+Planning Time (P.T.): 0.143 ms
+![Before_Query_Optimization](Before_Query_Optimization-Logo.png)
+Index Creation on the Artist Column
+To enhance query performance, we created an index on the Artist column. This index improves the efficiency of retrieving rows where the artist is queried, significantly speeding up searches.
+
+SQL command for creating the index:
+sql
+Copy code
+CREATE INDEX idx_artist ON spotify_tracks(artist);
+
+**AFTER QUERY OPTIMIZATION:**
+Performance Analysis After Index Creation
+After implementing the index, we re-ran the query and observed substantial improvements in performance:
+
+Execution Time (E.T.): 0.153 ms
+Planning Time (P.T.): 0.152 ms
+![After_Query_Optimization](After_Query_Optimization-Logo.png)
+This indicates that the index greatly optimized the query, reducing execution and planning time compared to the initial run.
 ---
 
 ## Conclusion
