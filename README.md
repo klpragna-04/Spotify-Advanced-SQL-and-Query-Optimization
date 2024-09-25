@@ -264,7 +264,7 @@ We conducted an initial performance analysis of a query using the EXPLAIN ANALYZ
 
 Execution Time (E.T.): 4.76 ms
 Planning Time (P.T.): 0.143 ms
-![Before_Query_Optimization](Before_Query_Optimization-Logo.png)
+![Before_Query_Optimization](Before_Query_Optimization.png)
 Index Creation on the Artist Column
 To enhance query performance, we created an index on the Artist column. This index improves the efficiency of retrieving rows where the artist is queried, significantly speeding up searches.
 
@@ -279,7 +279,7 @@ After implementing the index, we re-ran the query and observed substantial impro
 
 Execution Time (E.T.): 0.153 ms
 Planning Time (P.T.): 0.152 ms
-![After_Query_Optimization](After_Query_Optimization-Logo.png)
+![After_Query_Optimization](After_Query_Optimization.png)
 This indicates that the index greatly optimized the query, reducing execution and planning time compared to the initial run.
 ---
 
