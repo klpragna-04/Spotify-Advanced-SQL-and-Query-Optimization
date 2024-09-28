@@ -271,9 +271,10 @@ Planning Time (P.T.): 0.143 ms
 To enhance query performance, we created an index on the Artist column. This index improves the efficiency of retrieving rows where the artist is queried, significantly speeding up searches.
 
 SQL command for creating the index:
-sql
-Copy code
-CREATE INDEX idx_artist ON spotify_tracks(artist);
+ ```sql
+  CREATE INDEX idx_artist ON spotify_tracks(artist);
+   ```
+
 
 **AFTER QUERY OPTIMIZATION:**
 Performance Analysis After Index Creation
