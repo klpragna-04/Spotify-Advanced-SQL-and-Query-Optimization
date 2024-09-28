@@ -257,11 +257,6 @@ SQL query optimization is the process of enhancing the performance of SQL querie
 10. **Optimize JOIN Operations**
 ### EXAMPLE
 **BY USING INDEXES**
-
-Here’s a more polished and concise README description for your GitHub repository:
-
----
-
 ## Initial Query Performance Analysis
 We performed an initial analysis of a query using `EXPLAIN ANALYZE` to retrieve the top 5 tracks by **Taylor Swift** from a Spotify table, ordered by the number of streams in descending order. Below are the performance metrics for the initial query:
 
@@ -287,9 +282,7 @@ After creating the index, we re-executed the query and observed a **substantial 
 
 This demonstrates that the index greatly reduced both execution and planning time, resulting in a highly optimized query.
 
----
 
-This README description is structured to clearly showcase the problem, the solution (index creation), and the improvement in performance, while maintaining a professional and accessible tone for GitHub.
 ---
 
 ## Conclusion
